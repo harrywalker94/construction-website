@@ -424,8 +424,8 @@ body {
 
 .columns .icon {
     background-color: var(--blue);
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-    padding: 3.5rem;
+    border-radius: 50%;
+    padding: 4.5rem;
 }
 
 .columns a i {
