@@ -588,14 +588,17 @@ body {
     .about-img {
         height: 60vh;
         width: 80vw;
+        background-attachment: inherit;
     }
     .about-img-two {
         height: 60vh;
         width: 80vw;
+        background-attachment: inherit;
     }
     .about-img-three {
         height: 60vh;
         width: 80vw;
+        background-attachment: inherit;
     }
     .about-header {
         position: absolute;
