@@ -424,8 +424,8 @@ body {
 
 .columns .icon {
     background-color: var(--blue);
+    padding: 3.5rem;
     border-radius: 50%;
-    padding: 4.5rem;
 }
 
 .columns a i {
@@ -468,22 +468,16 @@ body {
 }
 
 .grid-container {
-    height: 100vh;
-    padding-top: 5rem;
+    height: 80vh;
+    margin-bottom: 5rem;
 }
 
 .about-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    column-gap: 1rem;
-    row-gap: 2px;
-    padding: 2rem 3rem;
     position: relative;
 }
 
 .about-title {
-    margin-top: -3rem;
+    padding-top: 4rem;
 }
 
 .about-header {
@@ -500,23 +494,23 @@ body {
 }
 
 .underline {
-    width: 30rem;
+    width: 20rem;
     height: 4px;
     background-color: var(--blue);
     margin-top: .5rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 .underline-2 {
-    width: 30rem;
+    width: 20rem;
     height: 4px;
     background-color: var(--blue);
     margin-top: .5rem;
-    margin-left: 18rem;
+    margin-left: 10rem;
 }
 
 .underline-3 {
-    width: 30rem;
+    width: 20rem;
     height: 4px;
     background-color: var(--blue);
     margin-top: .5rem;
@@ -563,6 +557,7 @@ body {
     top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
+    width: 600px;
 }
 
 .about-text-two {
@@ -585,24 +580,32 @@ body {
 }
 
 @media screen and (max-width:768px) {
+    .about {
+        padding: 0;
+    }
+    .grid-container {
+        padding-top: 0;
+    }
     .about-img {
-        height: 60vh;
         width: 80vw;
+        height: 80vh;
         background-attachment: inherit;
+        clip-path: none;
     }
     .about-img-two {
-        height: 60vh;
         width: 80vw;
+        height: 80vh;
         background-attachment: inherit;
+        clip-path: none;
     }
     .about-img-three {
-        height: 60vh;
         width: 80vw;
+        height: 80vh;
         background-attachment: inherit;
+        clip-path: none;
     }
     .about-header {
         position: absolute;
-        top: -4rem;
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0 !important;
@@ -623,7 +626,16 @@ body {
         transform: translate(-50%, -50%);
         margin: 0 !important;
     }
-    .underline, .underline-2, .underline-3 {
+    .underline {
+        width: 10rem;
+    }
+    .underline-2 {
+        display: none;
+    }
+    .underline-3 {
+        display: none;
+    }
+    .scroll-down-div {
         display: none;
     }
 }
@@ -634,6 +646,7 @@ body {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    margin-top: 10rem;
 }
 
 /* Hide the images by default */
@@ -745,6 +758,24 @@ body {
     bottom: 3.2rem;
     left: 1rem;
     transition: all .25s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .underline-4 {
+        width: 4rem;
+        left: 3rem;
+    }
+    .mySlides-header {
+        left: 2.5rem;
+        font-size: 3.5rem;
+    }
+    .prev, .next {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    .prev {
+        right: 90px
+    }
 }
 
 .mySlides-text {
