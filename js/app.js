@@ -35,7 +35,7 @@ $(document).ready(function () {
             .stop() // To stop the animate when another anchor linked is clicked
             .animate(
                 {
-                    scrollTop: $(target).offset().top - 0// scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically.
+                    scrollTop: $(target).offset().top - 10// scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically.
                 }, // The .offset().top  method allows us to retrieve the current position of the target element
                 500
             );
