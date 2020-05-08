@@ -646,17 +646,15 @@ body {
 .slideshow-container {
     max-width: 100%;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
     background: var(--l-grey);
     padding: 6rem;
-}
-
-/* Hide the images by default */
-
-.mySlides {
-    display: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 /* Next & previous buttons */
