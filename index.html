@@ -112,77 +112,90 @@
                     <p>At Bowden Moss customer satisfaction is our main aim, We have a wealth of experience within
                         the
                         commercial construction industry, specialising in the refurbishment and fit out sectors.</p>
-                    <a href="#slidesHeader" id="about-btn" class="global-btn">FIND OUT MORE</a>
+                    <a href="#carousel-header" id="about-btn-two" class="global-btn">FIND OUT MORE</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- End Columns -->
 
+    <div class="carousel-header" id="carousel-header">
+        <h1>Recent Case Studies</h1>
+        <div class="underline-5"></div>
+    </div>
 
-    <!-- ========================= Start Case Study Slide Show ========================= -->
-
-    <!-- Slideshow container -->
-    <div class="slideshow-container" id="slideShow">
-        <div class="slides-header" id="slidesHeader">
-            <div class="">
-                <h1>Recent Case Studies</h1>
-
-                <div class="underline-5"></div>
+    <div class="plant-carousel">
+        <div class="slide fade">
+            <img class="plant-1" src="assets/images/leicester-plain.jpg" alt="">
+            <div class="plant-caption">
+                <h1>Leicester</h1>
             </div>
-        </div>
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="img-slide-1">
-            </div>
-            <h1 class="mySlides-header">Hollis</h1>
-            <div class="see-casestudy">
-                <div class="underline-4"></div>
-                <div class="mySlides-text"><a href="case-studies.html" target="_blank">View Case Studies</a></div>
-            </div>
-        </div>
-
-
-        <div class="mySlides fade">
-            <div class="img-slide-2">
-            </div>
-            <h1 class="mySlides-header">Heathrow</h1>
             <div class="see-casestudy">
                 <div class="underline-4"></div>
                 <div class="mySlides-text">
-                    <a href="case-studies.html" target="_blank">View Case Studies</a>
+                    <a href="case-studies.html" target="_blank">View All Case Studies</a>
                 </div>
             </div>
         </div>
-
-        <div class="mySlides fade">
-            <div class="img-slide-3">
+        <div class="slide fade">
+            <img class="plant-2" src="assets/images/heathrow.jpg" alt="">
+            <div class="plant-caption">
+                <h1>Heathrow</h1>
             </div>
-            <h1 class="mySlides-header">Leicester</h1>
             <div class="see-casestudy">
                 <div class="underline-4"></div>
                 <div class="mySlides-text">
-                    <a href="case-studies.html" target="_blank">View Case Studies</a>
+                    <a href="case-studies.html" target="_blank">View All Case Studies</a>
                 </div>
             </div>
         </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
-        <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
-        <!-- The dots/circles -->
-        <div style="text-align:center" class="dots">
+        <div class="slide fade">
+            <img class="plant-3" src="assets/images/hollis.jpg" alt="">
+            <div class="plant-caption">
+                <h1>Cambridge</h1>
+            </div>
+            <div class="see-casestudy">
+                <div class="underline-4"></div>
+                <div class="mySlides-text">
+                    <a href="case-studies.html" target="_blank">View All Case Studies</a>
+                </div>
+            </div>
+        </div>
+        <a class="prev" onclick="nextSlide(-1)"><i class="fas fa-chevron-left"></i></a>
+        <a class="next" onclick="nextSlide(1)"><i class="fas fa-chevron-right"></i></a>
+        <br>
+        <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
-
-    <div class="row">
-        <div class="column side" style="background-color:#aaa;">Column</div>
-        <div class="column middle" style="background-color:#bbb;">Column</div>
-        <div class="column side" style="background-color:#ccc;">Column</div>
+    <div class="footer">
+        <div class="row">
+            <div class="column side">
+                <h1>Quick Links</h1>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="">Case Studies</a></li>
+                    <li><a href="index.html">Services</a>
+                    </li>
+                    <li><a href="privacy.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="column middle">
+                <h1>Visit Us</h1>
+                <p>Bowden Moss Ltd.</p>
+                <p>26 Bridge Road East, AL7 1HL</p>
+                <div class="map" id="map" data-aos="fade"></div>
+            </div>
+            <div class="column side">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="column side">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
     </div>
 
 
@@ -194,13 +207,15 @@
             duration: 1600,
         });
     </script>
-
-
-
     <script src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
+    <!-- Google Maps API -->
     <script type="text/javascript" src="js/app.js"></script>
-    <!-- Scripts located at the bottom of the body to insure page is fully loaded before execution -->
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDwq9-DSGt16s77pxQJv3zaOWbaiIH1q0&callback=initMap"></script>
+
 
 </body>
 

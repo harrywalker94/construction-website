@@ -27,7 +27,7 @@ $(document).ready(function () {
     });
 
     /* Smooth Scroll */
-    $(".scroll-down-arrow, #topBtn, #about-btn").click(function (link) {
+    $(".scroll-down-arrow, #topBtn, #about-btn-two").click(function (link) {
         link.preventDefault(); // preventDefault method stops the default action of an element happening
 
         let target = $(this).attr("href"); // Find the attribute of the href of the anchor link
@@ -48,4 +48,46 @@ $(document).ready(function () {
             $('#topBtn').fadeOut();
         }
     });
+
 });
+
+/* GoogleMaps API */
+
+/* Map Options */
+var options = {
+    zoom: 9,
+    center: {
+        lat: 51.801128,
+        lng: -0.195730
+    }
+}
+
+function initMap() {
+    var map = new google.maps.Map(document.getElementById("map"), options);
+
+    var marker = new google.maps.Marker({
+        position: { lat: 51.801128, lng: -0.195730 },
+        map: map,
+        icon: './assets/images/marker.png',
+        draggable: true,
+        animation: google.maps.Animation.DROP,
+    });
+
+    marker.addListener('click', toggleBounce);
+
+
+
+    marker.addListener('click', function () {
+        infoWindow.open(map, marker);
+    });
+
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
+
+
+}
