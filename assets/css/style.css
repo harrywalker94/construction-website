@@ -694,9 +694,6 @@ body {
 }
 
 .plant-1, .plant-2, .plant-3 {
-    background-attachment: fixed;
-    background-position: center center;
-    object-fit: cover;
     width: 50%;
     margin: 0 auto;
     transition: all .25s ease;
@@ -731,9 +728,6 @@ body {
 }
 
 @media screen and (max-width:768px) {
-    .plant-1, .plant-2, .plant-3 {
-        width: 85%;
-    }
     .mySlides-text {
         font-size: 1rem;
         bottom: 5rem;
