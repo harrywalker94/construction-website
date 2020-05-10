@@ -729,9 +729,8 @@ body {
 
 @media screen and (max-width:768px) {
     .plant-1, .plant-2, .plant-3 {
-        background-attachment: fixed;
-        background-position: center center;
-        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     .mySlides-text {
         font-size: 1rem;
