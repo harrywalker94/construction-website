@@ -729,9 +729,9 @@ body {
 
 @media screen and (max-width:768px) {
     .plant-1, .plant-2, .plant-3 {
+        width: auto;
         max-width: 100%;
         height: auto;
-        width: auto\9;
     }
     .mySlides-text {
         font-size: 1rem;
