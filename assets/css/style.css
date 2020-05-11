@@ -694,7 +694,9 @@ body {
 }
 
 .plant-1, .plant-2, .plant-3 {
-    width: 50%;
+    width: auto;
+    max-width: 60%;
+    height: auto;
     margin: 0 auto;
     transition: all .25s ease;
     opacity: .6;
