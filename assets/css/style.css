@@ -649,10 +649,6 @@ body {
     padding: 2rem;
 }
 
-.slide {
-    display: none;
-}
-
 .plant-carousel {
     position: relative;
     display: flex;
