@@ -730,7 +730,7 @@ body {
 @media screen and (max-width:768px) {
     .plant-1, .plant-2, .plant-3 {
         width: 100%;
-        background: center/cover fixed no-repeat;
+        object-fit: cover;
     }
     .mySlides-text {
         font-size: 1rem;
