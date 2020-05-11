@@ -689,6 +689,10 @@ body {
     }
 }
 
+.slide {
+    z-index: 1;
+}
+
 .slide-1 {
     object-fit: cover;
     z-index: -1;
@@ -734,6 +738,7 @@ body {
     position: absolute;
     bottom: 3.5rem;
     left: 13rem;
+    z-index: 1;
 }
 
 .mySlides-text a {
@@ -741,15 +746,19 @@ body {
     color: black;
 }
 
+.see-casestudy {
+    z-index: 999;
+    cursor: pointer;
+}
+
 .see-casestudy:hover .underline-4 {
-    right: 8rem;
-    width: 0rem;
+    left: 16rem;
 }
 
 @media screen and (max-width:768px) {
     .slide-1, .slide-2, .slide-3 {
-        width: 80vw;
-        height: 50vh;
+        width: 95vw;
+        height: 100%;
         background-attachment: inherit;
     }
     .mySlides-text {
