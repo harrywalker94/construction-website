@@ -757,18 +757,20 @@ body {
 
 @media screen and (max-width:768px) {
     .slide-1, .slide-2, .slide-3 {
-        width: 95vw;
+        width: 100vw;
         height: 100%;
         background-attachment: inherit;
     }
     .mySlides-text {
         font-size: 1rem;
-        bottom: 5rem;
-        left: 9rem;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .underline-4 {
-        bottom: 4.5rem;
-        left: 9rem;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -861,7 +863,15 @@ body {
     position: absolute;
     justify-content: center;
     width: 100%;
-    bottom: 1.5em;
+    bottom: -4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .dot-container {
+        bottom: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .active, .dot:hover {
