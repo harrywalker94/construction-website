@@ -104,8 +104,8 @@ body {
 }
 
 .home-logo-img {
-    width: 25%;
-    height: 12rem;
+    width: 35%;
+    height: 16rem;
 }
 
 @media screen and (max-width: 760px) {
@@ -1158,6 +1158,15 @@ body {
     padding: 1rem 1rem 4rem 1rem;
 }
 
+@media screen and (max-width: 768px) {
+    .numbers div:nth-child(1) {
+        border-right: none;
+    }
+    .numbers div:nth-child(2) {
+        border-right: none;
+    }
+}
+
 .numbers h1 {
     margin: 0 0rem 2rem 0rem;
     font-size: 2rem;
@@ -1225,6 +1234,7 @@ body {
     z-index: 999;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
     background: var(--blue);
     border: 1px solid var(--blue);
     transition: all .1s ease-in;
@@ -1248,7 +1258,7 @@ body {
     transform: translateX(-70px);
     opacity: 0;
     padding-left: .5rem;
-    padding-right: 3rem;
+    padding-right: 2.7rem;
     text-transform: uppercase;
     letter-spacing: .8px;
     font-size: 1rem;
@@ -1262,7 +1272,7 @@ body {
 }
 
 .filter-btn:hover {
-    background: var(--blue);
+    background: var(--l-grey);
     border: 1px solid var(--blue);
     outline-color: var(--blue);
     color: var(--white);
