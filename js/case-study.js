@@ -1,43 +1,87 @@
 const menu = [
     {
         id: 1,
-        title: "Heathrow",
+        title: "Unit 8 - Heathrow",
         category: "Heathrow",
-        price: 15.99,
         img: "./assets/images/heathrow.jpg",
-        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        img2: "./assets/images/heathrow2.jpg",
+        img3: "./assets/images/heathrow3.jpg",
+        img4: "./assets/images/heathrow4.jpg",
+        img5: "./assets/images/heathrow5.jpg",
+        desc: `    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum ex nihil aliquid aspernatur quidem eveniet obcaecati
+        natus atque quasi? Quisquam inventore corrupti magni! Exercitationem perferendis voluptatem deserunt doloremque sit
+        veritatis id, distinctio sequi optio necessitatibus sed voluptates. Illo possimus consectetur eos pariatur, debitis
+        repudiandae ipsum unde porro, laudantium vero, incidunt nulla expedita reprehenderit rem beatae maiores dignissimos
+        a excepturi non officiis.`,
+        client: "Client A",
+        date: 2020,
+        location: "Heathrow, London"
     },
     {
         id: 2,
-        title: "Leicester",
+        title: "Unit 4 - Leicester",
         category: "Leicester",
-        price: 13.99,
         img: "./assets/images/leicester.jpg",
-        desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
+        img2: "./assets/images/leicester6.jpg",
+        img3: "./assets/images/leicester5.jpg",
+        img4: "./assets/images/leicester3.jpg",
+        img5: "./assets/images/leicester8.jpg",
+        desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum modi ducimus eos quaerat tempora error, aliquam
+        illum asperiores quas labore consequuntur natus possimus nostrum provident porro molestiae id quis. Voluptas quas
+        animi officiis vero consequatur, quaerat temporibus suscipit doloremque.`,
+        client: "Client B",
+        date: 2019,
+        location: "Leicester, Leicestershire"
     },
     {
         id: 3,
-        title: "Hollis",
-        category: "Hollis",
-        price: 6.99,
-        img: "./assets/images/hollis.jpg",
-        desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
+        title: "Unit 4 - Kent",
+        category: "Swanley",
+        img: "./assets/images/swanley3.jpg",
+        img2: "./assets/images/swanley2.jpg",
+        img3: "./assets/images/swanley.jpg",
+        img4: "./assets/images/swanley4.jpg",
+        img5: "./assets/images/swanley5.jpg",
+        desc: `Labore consequuntur natus possimus nostrum provident porro molestiae. 
+        ipsum dolor sit amet consectetur adipisicing elit. Earum modi ducimus eos quaerat. officiis vero consequatur,
+         quaerat temporibus suscipit.`,
+        client: "Client C",
+        date: 2019,
+        location: "Swanley, Kent"
     },
     {
         id: 4,
-        title: "London",
-        category: "London",
-        price: 13.99,
-        img: "./assets/images/leicester-plain.jpg",
-        desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
+        title: "Unit 6 - Hemel Hempstead",
+        category: "H..Hempstead",
+        img: "./assets/images/hemel.jpg",
+        img2: "./assets/images/hemel2.jpg",
+        img3: "./assets/images/hemel3.jpg",
+        img4: "./assets/images/hemel4.jpg",
+        img5: "./assets/images/hemel5.jpg",
+        desc: `Vaporware iPhone mumblecore selvage raw denim slow-carb leggings,
+         gochujang helvetica man braid jianbing. Marfa thundercats. Labore consequuntur natus possimus nostrum provident porro molestiae. 
+         ipsum dolor sit amet consectetur adipisicing elit. Earum modi ducimus eos quaerat.`,
+        client: "Client D",
+        date: 2019,
+        location: "Hemel Hempstead, Hertfordshire"
     },
     {
         id: 5,
-        title: "Harlow",
-        category: "Harlow",
-        price: 13.99,
-        img: "./assets/images/hollis.jpg",
-        desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
+        title: "Unit 33 & 34 - Acton",
+        category: "Acton",
+        img: "./assets/images/acton2.jpg",
+        img2: "./assets/images/acton3.jpg",
+        img3: "./assets/images/acton.jpg",
+        img4: "./assets/images/acton4.jpg",
+        img5: "./assets/images/acton5.jpg",
+        desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing.
+         Marfa thundercats, selvage raw denim slow-carb leggings,
+         gochujang helvetica man braid jianbing `,
+        client: "Client E",
+        date: 2019,
+        location: "Acton, London"
+
+
     }
 ];
 // get parent element
@@ -57,41 +101,71 @@ function diplayMenuItems(menuItems) {
         // console.log(item);
 
         return ` <section class="cs-section">
-        <div class="cs-img">
+       <div class="cs-img">
        <img src=${item.img} alt=${item.title}>
        <div class="cs-header">
-           <h1 class="cs-title">Case Studies</h1>
-           <div class="cs-title-underline"></div>
        </div>
-   </div>
+       </div>
 
    <main class="flex-container">
-
        <section class="main-content blue">
-
            <div class="cs-box">
-           
-           
                <div id="corner"></div>
-
                <h6>${item.title}</h6>
                <p>${item.desc}</p>
            </div>
        </section>
-
        <aside class="sidebar green">
-           <h2>Sidebar</h2>
-           <p>
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti temporibus recusandae nisi, ipsa esse
-               tempore aperiam laborum libero ipsum at? Accusamus nostrum, atque amet, fugiat voluptate iusto maiores
-               quam similique dolorum vel, voluptatum rerum dignissimos accusantium modi perferendis quidem in! Eum
-               velit aut voluptate ea rerum. Mollitia possimus aut itaque!
-           </p>
-
-       </aside>
-
+       <div class="numbers">
+       <div class="client">
+           <h1>Client</h1>
+           <p>${item.client}</p>
+       </div>
+       <div class="date">
+           <h1>Date</h1>
+           <p>${item.date}</p>
+       </div>
+       <div class="time-frame">
+           <h1>Location</h1>
+           <p>${item.location}</p>
+       </div>
+   </div>
+   </aside>
    </main>
-   </section>`;
+
+   <section class="img-grid" id="grid">
+   <div class="img-grid_container">
+       <!-- Grid item -->
+       <article class="grid-item grid-item-1">
+           <img src=${item.img} alt=${item.title} class="grid-item_img" id="grid-img">
+       </article>
+       <!-- End Grid item -->
+       <!-- Grid item -->
+       <article class="grid-item grid-item-2">
+           <img src=${item.img2} alt=${item.title} class="grid-item_img" id="grid-img">
+       </article>
+       <!-- End Grid item -->
+       <!-- Grid item -->
+       <article class="grid-item grid-item-3">
+           <img src=${item.img3} alt=${item.title} class="grid-item_img" id="grid-img">
+       </article>
+       <!-- End Grid item -->
+       <!-- Grid item -->
+       <article class="grid-item grid-item-4">
+           <img src=${item.img4} alt=${item.title} class="grid-item_img" id="grid-img">
+       </article>
+       <!-- End Grid item -->
+       <!-- Grid item -->
+       <article class="grid-item grid-item-5">
+           <img src=${item.img5} alt=${item.title} class="grid-item_img" id="grid-img">
+       </article>
+       <!-- End Grid item -->
+
+   </div>
+</section>
+`;
+
+
     });
 
     // console.log(displayMenu);
@@ -136,3 +210,6 @@ function displayMenuButtons() {
         });
     });
 }
+
+
+

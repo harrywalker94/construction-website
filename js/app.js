@@ -49,13 +49,36 @@ $(document).ready(function () {
         }
     });
 
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-6rem";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* GoogleMaps API */
 
 /* Map Options */
 var options = {
-    zoom: 9,
+    zoom: 7,
     center: {
         lat: 51.801128,
         lng: -0.195730
@@ -91,3 +114,5 @@ function initMap() {
 
 
 }
+
+
