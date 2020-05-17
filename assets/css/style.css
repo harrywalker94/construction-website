@@ -17,6 +17,7 @@ body {
 :root {
     --d-grey: #5E5955;
     --blue: #59A2CF;
+    --d-blue: #003459;
     --white: #FCFCFC;
     --m-grey: #8F9491;
     --l-grey: #DCDCDD;
@@ -447,6 +448,7 @@ body {
     background-color: var(--blue);
     padding: 3.5rem;
     border-radius: .2rem;
+    z-index: 999;
 }
 
 .columns a i {
@@ -462,6 +464,14 @@ body {
 
 .columns p {
     margin: 1.5rem 0 1.5rem 0;
+    color: var(--d-grey);
+}
+
+.columns ul {
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.columns li {
     color: var(--d-grey);
 }
 
@@ -1249,19 +1259,31 @@ body {
     box-shadow: 0px 5px 7px -1px var(--d-grey);
 }
 
+.filter-btn:focus {
+    background: var(--d-blue);
+    box-shadow: 0px 1px 2px -1px var(--d-grey);
+    border: 2px solid var(--blue);
+}
+
+.filter-btn.active {
+    background: var(--d-blue);
+    border: 2px solid var(--blue);
+}
+
 .filter-btn-text {
     visibility: hidden;
     transition: all .1s ease-in;
     color: var(--white);
     outline: none;
     background: var(--blue);
-    transform: translateX(-70px);
+    transform: translateX(-75px);
     opacity: 0;
     padding-left: .5rem;
-    padding-right: 2.7rem;
+    padding-right: 3.6rem;
     text-transform: uppercase;
     letter-spacing: .8px;
-    font-size: 1rem;
+    white-space: nowrap;
+    font-size: .8rem;
     z-index: -1;
 }
 
@@ -1272,11 +1294,44 @@ body {
 }
 
 .filter-btn:hover {
-    background: var(--l-grey);
-    border: 1px solid var(--blue);
+    background: var(--d-blue);
+    border: 2px solid var(--blue);
     outline-color: var(--blue);
     color: var(--white);
     box-shadow: 0px 1px 2px -1px var(--d-grey);
+}
+
+.filter-btn .filter-btn-active {
+    background: var(--l-grey);
+    border: 1px solid var(--blue);
+}
+
+.arrow-container {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.arrow-container a {
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    transition: all .1s ease-in;
+    margin: 7px;
+    display: block;
+    display: flex;
+    outline: none;
+    justify-content: center;
+    font-size: 1rem;
+    transition: all ease-in .1s;
+    cursor: pointer;
+    box-shadow: 0px 5px 7px -1px var(--d-grey);
 }
 
 /* ==================== Footer ==================== */
@@ -1315,8 +1370,8 @@ body {
 }
 
 .map {
-    height: 50%;
-    width: 50%;
+    height: 200px;
+    width: 200px;
     margin: 0 auto;
     margin-top: 2rem;
     border: solid 2px var(--d-grey);

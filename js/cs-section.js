@@ -4,7 +4,7 @@ const menu = [
         title: "Warehouse Refurbishments",
         category: "Warehouses",
         img: "./assets/images/leicester.jpg",
-        link: "<a href=\"case-studies.html\" target=\"_blank\" class=\"global-btn\">See All</a>",
+        link: "<a href=\"warehouse.html\" target=\"_blank\" class=\"global-btn\">See All</a>",
         desc: `Bowden Moss specialises in warehouse refurbishment for industrial and commercial clients across the UK.
         With a team of specialist professional contractors at our disposal, we ensure that every industrial refurbishment contract is completed
         to the highest standards and with minimal disruption to your business operations during the process.`,
@@ -14,7 +14,7 @@ const menu = [
         title: "Office Refurbishments",
         category: "Office's",
         img: "./assets/images/hollis3.jpg",
-        link: "<a href=\"case-studies.html\" target=\"_blank\" class=\"global-btn\">See All</a>",
+        link: "<a href=\"office.html\" target=\"_blank\" class=\"global-btn\">See All</a>",
         desc: `Bowden Moss specialises in Office refurbishment for industrial and commercial clients across the UK.
         With a team of specialist professional contractors at our disposal, we ensure that every industrial refurbishment contract is completed
         to the highest standards and with minimal disruption to your business operations during the process.`,
@@ -24,7 +24,7 @@ const menu = [
         title: "Education Fitouts",
         category: "Education",
         img: "./assets/images/education1.jpg",
-        link: "<a href=\"case-studies.html\" target=\"_blank\" class=\"global-btn\">See All</a>",
+        link: "<a href=\"education.html\" target=\"_blank\" class=\"global-btn\">See All</a>",
         desc: `Bowden Moss specialises in Education Fit outs for clients across the UK.
         With a team of specialist professional contractors at our disposal, we ensure that every industrial refurbishment contract is completed
         to the highest standards and with minimal disruption to your business operations during the process.`,
@@ -34,7 +34,7 @@ const menu = [
         title: "Residential Building Services",
         category: "Residential",
         img: "./assets/images/residential1.jpg",
-        link: "<a href=\"case-studies.html\" target=\"_blank\" class=\"global-btn\">See All</a>",
+        link: "<a href=\"residential.html\" target=\"_blank\" class=\"global-btn\">See All</a>",
         desc: `Bowden Moss specialises in Residential Building Services refurbishment for clients across the UK.
         With a team of specialist professional contractors at our disposal, we ensure that every industrial refurbishment contract is completed
         to the highest standards and with minimal disruption to your business operations during the process.`,
@@ -112,7 +112,7 @@ function displayMenuButtons() {
     );
     const categoryBtns = categories
         .map(function (category) {
-            return `<button type="button" class="filter-btn" data-id=${category}><p class="filter-btn-text">${category}</p>
+            return `<button type="button" onclick="myFunction()" class="filter-btn" data-id=${category}><p class="filter-btn-text">${category}</p>
           </button>`;
         })
         .splice(1).join("");

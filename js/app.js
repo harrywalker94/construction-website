@@ -2,6 +2,8 @@
 $(document).ready(function () {
     $(".pre-loader").fadeOut();
 
+    $('.filter-btn:first-child').addClass('active');
+
     document.querySelector(".hamburger-menu").addEventListener("click", () => {
         document.querySelector(".hamburger-menu").classList.toggle("change");
     });
@@ -62,17 +64,10 @@ $(document).ready(function () {
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
+function myFunction() {
+    var element = document.querySelector(".filter-btn:first-child");
+    element.classList.remove("active");
+}
 
 /* GoogleMaps API */
 
