@@ -383,7 +383,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
-    border-top: solid 1px rgba(94, 89, 85, .2);
 }
 
 .columns-content {
