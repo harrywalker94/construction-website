@@ -82,7 +82,7 @@ body {
 
 @media screen and (max-width: 760px) {
     .header-image {
-        background: var(--white);
+        background: var(--l-grey);
         min-height: 30vh;
         border: none !important;
     }
@@ -175,6 +175,7 @@ body {
     .navbar-desktop img {
         height: 3rem;
         align-items: left;
+        cursor: pointer;
     }
     .navbar-desktop a {
         color: var(--d-grey);
@@ -396,41 +397,29 @@ body {
     padding: 1rem;
     flex-wrap: wrap;
     overflow: hidden;
+    width: 100px;
 }
 
 .column-1 {
     flex: 1;
     order: 1;
-    max-width: 33.333%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 3rem;
-    border-right: solid 1px rgba(94, 89, 85, .2);
+    height: 300px;
 }
 
 .column-2 {
     flex: 1;
     order: 2;
-    max-width: 33.333%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 3rem;
-    border-right: solid 1px rgba(94, 89, 85, .2);
-}
-
-.column-3 {
-    flex: 1;
-    order: 3;
-    max-width: 33.333%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem;
+    height: 300px;
 }
 
 @media (max-width: 767px) {
@@ -447,7 +436,7 @@ body {
     background-color: var(--blue);
     padding: 3.5rem;
     border-radius: .2rem;
-    z-index: 999;
+    z-index: 998;
 }
 
 .columns a i {
@@ -464,10 +453,12 @@ body {
 .columns p {
     margin: 1.5rem 0 1.5rem 0;
     color: var(--d-grey);
+    width: 300px;
 }
 
 .columns ul {
     margin: 1.5rem 0 1.5rem 0;
+    width: 200px;
 }
 
 .columns li {
@@ -486,6 +477,7 @@ body {
     text-decoration: none;
     transition: all ease .25s;
     text-transform: uppercase;
+    bottom: 2rem;
 }
 
 .global-btn:hover {

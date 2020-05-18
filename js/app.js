@@ -29,7 +29,7 @@ $(document).ready(function () {
     });
 
     /* Smooth Scroll */
-    $(".scroll-down-arrow, #topBtn, #about-btn-two").click(function (link) {
+    $(".scroll-down-arrow, #topBtn, #about-btn-two, .global-btn").click(function (link) {
         link.preventDefault(); // preventDefault method stops the default action of an element happening
 
         let target = $(this).attr("href"); // Find the attribute of the href of the anchor link
