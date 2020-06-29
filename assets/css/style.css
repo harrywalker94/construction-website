@@ -580,12 +580,6 @@ body {
     }
 }
 
-@media screen and (min-width: 992px) {
-    .slider-container {
-        height: 65vh;
-    }
-}
-
 
 /* ============================== Case Studies Section ============================== */
 
@@ -671,6 +665,9 @@ body {
     .map {
         width: 200px;
         height: 200px;
+    }
+    .footer {
+        transform: translateY(-300px);
     }
 }
 
