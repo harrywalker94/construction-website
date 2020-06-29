@@ -566,17 +566,16 @@ body {
 @media screen and (max-width: 768px) {
     .slider-container {
         width: 80vw;
-        height: 90vh;
+        height: 50rem;
         transform: translateY(-270px);
         margin-bottom: 0.5rem;
+        margin-top: 3rem;
     }
     .btn-container {
         transform: translateY(-300px);
     }
-    .title {
-        margin-bottom: 2rem;
-    }
-    .img-text {
+    .img-text h1,
+    .img-text h4 {
         display: none;
     }
 }
