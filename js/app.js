@@ -88,7 +88,16 @@ function carousel() {
     //   counter = slides.length - 1;
     // }
     // working with buttons
-
+    if (counter < slides.length - 1) {
+        nextBtn.style.display = "block";
+    } else {
+        nextBtn.style.display = "none";
+    }
+    if (counter > 0) {
+        prevBtn.style.display = "block";
+    } else {
+        prevBtn.style.display = "block";
+    }
     slides.forEach(function(slide) {
         slide.style.transform = `translateX(-${counter * 100}%)`;
     });

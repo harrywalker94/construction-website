@@ -466,19 +466,6 @@ body {
 
 /* ============================== Slider =========================== */
 
-.slider-title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.slider-title .slider-underline {
-    background: var(--blue);
-    height: 0.5rem;
-    width: 5rem;
-    text-align: center;
-}
-
 .slider-container {
     width: 60vw;
     margin: 0 auto;
@@ -585,6 +572,12 @@ body {
     }
     .btn-container {
         transform: translateY(-300px);
+    }
+    .title {
+        margin-bottom: 2rem;
+    }
+    .img-text {
+        display: none;
     }
 }
 
