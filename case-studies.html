@@ -42,14 +42,15 @@
         <div class="line line3"></div>
     </div>
     <!-- End Navigation Button/Hamburger Menu -->
+
     <!-- Header Section -->
     <header class="header" id="header">
-        <!-- Navbar -->
-        <nav class="navbar" id="nav">
+        <!-- Side Navbar Mobile -->
+        <nav class="navbar nav-mobile" id="nav">
+
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="javascript:void(0)"
-                        class="nav-close-btn"><span><strong>&times;</strong>&nbsp;Close</span></a>
+                    <a href="javascript:void(0)" class="nav-close-btn"><span><strong>&times;</strong>&nbsp;Close</span></a>
                 </li>
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
@@ -58,10 +59,10 @@
                     <a href="about.html" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="cs-section.html" class="nav-link">Case Studies</a>
+                    <a href=".cs-section.html" class="nav-link">Case Studies</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#footer" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">Contact</a>
                 </li>
                 <li class="social-icons">
                     <a href="#" class="">
@@ -79,26 +80,53 @@
         <!-- End Navbar -->
     </header>
     <!-- End Header Section -->
-    <div class="btn-container">
-    </div>
-
-    <!-- cs items -->
-    <div class="section-center">
-    </div>
-
     <!-- ========== Scroll Top Button ========== -->
     <a href="#header" id="topBtn"><i class="fas fa-chevron-up"></i></a>
 
+    <!-- ========== Case Studies Section =========== -->
+    <!-- Title -->
+    <div class="title">
+        <div>
+            <h2>Case Studies</h2>
+            <div class="underline"></div>
+        </div>
+    </div>
+    <!-- End Title -->
 
 
-    <div class="footer" id="footer">
+    <div class="menu-div">
+        <!-- Single Item -->
+        <article class="menu-item">
+            <div>
+                <img src="assets/images/leicester4.jpg" alt="">
+            </div>
+            <div class="item-info">
+                <header>
+                    <h4>Item Header</h4>
+                </header>
+                <p class="item-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor dolorem aliquam in ipsam nemo, voluptatum dignissimos, sapiente inventore molestias corrupti similique repellat maxime quo! Cum assumenda natus debitis eveniet tempora asperiores earum unde
+                    aliquam officiis!
+                </p>
+
+            </div>
+        </article>
+    </div>
+    <!-- End Single Item -->
+
+
+
+    <!-- ========== End Case Studies Section =========== -->
+
+    <div class="footer">
         <div class="row">
             <div class="column side">
                 <h1>Quick Links</h1>
                 <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="">Case Studies</a></li>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="about-us.html" target="_blank">About Us</a></li>
+                    <li><a href="cs-section.html" target="_blank">Case Studies</a></li>
+                    </li>
                 </ul>
             </div>
             <div class="column middle">
@@ -129,7 +157,6 @@
         </div>
     </div>
 
-
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -138,16 +165,12 @@
             duration: 1600,
         });
     </script>
-
-
-
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/education.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <!-- Google Maps API -->
     <script type="text/javascript" src="js/app.js"></script>
-    <script
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDwq9-DSGt16s77pxQJv3zaOWbaiIH1q0&callback=initMap"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDwq9-DSGt16s77pxQJv3zaOWbaiIH1q0&callback=initMap"></script>
 
 
 </body>
