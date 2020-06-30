@@ -21,6 +21,7 @@ body {
     --blue: #59a2cf;
     --d-blue: #003459;
     --white: #ffffff;
+    --black: #000000;
     --m-grey: #8f9491;
     --l-grey: #dcdcdd;
 }
@@ -398,6 +399,12 @@ body {
     padding: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+    .about-two {
+        margin-bottom: 15rem;
+    }
+}
+
 .grid-container {
     max-width: 90vw;
     margin: 2rem auto;
@@ -438,7 +445,7 @@ body {
 }
 
 .about-title {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: capitalize;
 }
 
@@ -453,6 +460,14 @@ body {
     line-height: 1.5;
     margin-top: 1rem;
     color: var(--d-grey);
+}
+
+.about-title a {
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: var(--d-grey);
+    font-weight: 900;
+    border-bottom: solid 1px var(--blue);
 }
 
 @media screen and (min-width: 768px) {
@@ -504,13 +519,24 @@ body {
 .slide img {
     height: 100%;
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.5;
+    transition: all 0.25s ease-in-out;
 }
 
-.slide h1,
+.slide img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 .slide h4 {
-    font-size: 1rem;
-    color: var(--l-grey);
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.underline {
+    width: 12rem;
+    height: 0.25rem;
+    background: var(--blue);
 }
 
 .person-img {
@@ -575,8 +601,7 @@ body {
     .btn-container {
         transform: translateY(-300px);
     }
-    .img-text h1,
-    .img-text h4 {
+    .img-text {
         display: none;
     }
 }
